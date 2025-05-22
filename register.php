@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "peminjaman_db");
+$conn = new mysqli("localhost", "root", "", "peminjamandb");
 
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
@@ -24,7 +24,7 @@ $query = "INSERT INTO user (NIM, nama, prodi, no_hp, email, password)
           VALUES ('$nim', '$nama', '$prodi', '$no_hp', '$email', '$password')";
 
 if ($conn->query($query) === TRUE) {
-    echo "<script>alert('Registrasi berhasil! Silakan login.'); window.location='login.html';</script>";
+    echo "<script>alert('Registrasi berhasil! Silakan login.'); window.location='index.html';</script>";
 } else {
     echo "Error: " . $conn->error;
 }

@@ -2,7 +2,7 @@
 $host = 'localhost';      
 $user = 'root';           
 $pass = '';               
-$db   = 'peminjaman_db';
+$db   = 'peminjamandb';
 
 $conn = new mysqli($host, $user, $pass, $db);
 
